@@ -1,5 +1,5 @@
 # table_robot
-Technical test for Altair.
+Technical test.
 
 ## Requisites
 The requisite was to create an app to simulate a toy robot on a 5x5 tiles table. The origin (0,0) can be considered to be the SOUTH WEST most corner.
