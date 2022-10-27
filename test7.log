@@ -136,13 +136,3 @@
 [2022-10-27 13:04:25,497] WARNING : The toy robot was pushed to the edge. [4,4,NORTH]
 [2022-10-27 13:04:27,471] WARNING : The toy robot was pushed to the edge. [4,4,NORTH]
 [2022-10-27 13:04:34,145] DEBUG : The robot REPORTED its position. [4,4,NORTH]
-[2022-10-27 13:04:52,721] DEBUG : Application started.
-[2022-10-27 13:05:02,489] WARNING : Wrong command inputted. ('AUTODESTRUCT')
-[2022-10-27 13:05:07,361] WARNING : Wrong command inputted. ('TAKEOFF')
-[2022-10-27 13:05:10,185] WARNING : Wrong command inputted. ('KILL')
-[2022-10-27 13:05:11,769] WARNING : Command inputted before placing a robot. ('REPORT')
-[2022-10-27 13:05:22,921] DEBUG : The robot was placed in 0,0,NORTH.
-[2022-10-27 13:05:38,011] WARNING : Wrong command inputted. ('AUTODESTRUCT')
-[2022-10-27 13:05:46,626] WARNING : Wrong command inputted. ('TAKEOFF')
-[2022-10-27 13:05:49,154] WARNING : Wrong command inputted. ('KILL')
-[2022-10-27 13:05:53,418] DEBUG : The robot REPORTED its position. [0,0,NORTH]

@@ -69,13 +69,15 @@ print("""
     3) EXIT WHEN YOU WANT TO STOP THE APPLICATION.
 """)
 
+logging.debug('Application started.')
+
 # Start of the working cycle
 while 1:
     # A message is shown on the console asking for an order from the list.
     order = input(
         """
 Introduce your command:
-    > PLACE X,Y,F   (X and Y in [0-4] | F in {NORTH, EAST, SOUTH, WEST}
+    > PLACE X,Y,F   ( X and Y in [0-4] | F in {NORTH, EAST, SOUTH, WEST} )
     > MOVE
     > LEFT
     > RIGHT
