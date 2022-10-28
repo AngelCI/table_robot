@@ -22,4 +22,4 @@ A robot that is not on the table can choose to ignore the `MOVE`, `LEFT`, `RIGHT
  - Any move that would cause the robot to fall must be ignored. 
  - The first valid command to the robot is a `PLACE` command, after that, any sequence of commands may be issued, in any order, including another `PLACE` command. The application should discard all commands in the sequence until a valid `PLACE` command has been executed.
  ___
- The test logs are also included.
+ This version has been tested according to the provided "test_data.txt" successfully.
