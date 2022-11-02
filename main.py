@@ -5,52 +5,10 @@ CODE FOR THE MICHAEL PAGE SELECTION PROCESS
 """
 
 import logging
-
-"""
-Function requisites:
-PLACE X,Y,F
-MOVE
-LEFT
-RIGHT
-REPORT
-"""
+import robot_class
 
 # Logging configuration
 logging.basicConfig(filename='table_robot_log.log', level=logging.DEBUG, format='[%(asctime)s] %(levelname)s : %(message)s')
-
-
-# Definition of the 'Robot' class used for the control of the toy robot on the table
-class Robot:
-    def __init__(self, x=0, y=0, direction='NORTH'):
-        self.position = [int(x), int(y)]
-        self.dir = str(direction)
-        # self.report()
-
-    def set_x(self, x):
-        self.position[0] = int(x)
-
-    def get_x(self):
-        return self.position[0]
-
-    def set_y(self, y):
-        self.position[1] = int(y)
-
-    def get_y(self):
-        return self.position[1]
-
-    def set_dir(self, d):
-        self.dir = d
-
-    def get_dir(self):
-        return self.dir
-
-    def report(self):
-        """
-        Function used to report the current state of the toy robot.
-        Shows the X and Y position and the facing direction.
-        """
-        print(f'{self.get_x()}, {self.get_y()}, {self.get_dir()}')
-
 
 # Robot object initialization as None
 myRobot = None
@@ -92,7 +50,7 @@ Introduce your command:
         # order[8] is the Y
         # order[10:] is the F
         if order[6] in pos_set and order[8] in pos_set and order[10:] in dirs_set:
-            myRobot = Robot(order[6], order[8], order[10:])
+            myRobot = robot_class.Robot(order[6], order[8], order[10:])
             logging.debug('The robot was placed in %s,%s,%s.', order[6], order[8], order[10:])
         else:
             print("""
